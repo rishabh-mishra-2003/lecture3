@@ -4,36 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+       @media(min-width: 500px){
+           p::before{
+               content: "Welcome to my webpage";
+           }
+       }
+       @media(max-width: 499px){
+           p::before{
+               content: "welcome";
+           }
+       }
+    </style>
 </head>
 <body>
     
-    <form action="">
-        <div>
-            <input type="text" name="name" placeholder="Name">
-            <input type="password" placeholder="Password" name="password">
-        </div> 
-
-        <div>
-            Favorite color?
-            <input type="radio" name="color" value="red">Red
-            <input type="radio" name="color" value="green">Green
-            <input type="radio" name="color" value="blue">Blue
-            <input type="radio" name="color" value="other"> Other
-        </div>
-
-        <div>
-            <input name="country" placeholder="Country" list="countries">
-            <datalist id="countries"> 
-                <option value="Afganistan">
-                <option value="Albain">
-                <option value="India">
-                <option value="Pakistan">
-                <option value="Sri lanka">
-                <option value="Nepal">   
-                
-            </datalist>
-        </div>
-    </form>
-   
+   <p></p>
 </body>
 </html>
